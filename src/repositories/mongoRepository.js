@@ -4,12 +4,14 @@ const mongoose = require('mongoose');
 // ── Schema ────────────────────────────────────────────────────────────────────
 const usuarioSchema = new mongoose.Schema(
   {
-    nome:       { type: String, required: true },
-    cep:        { type: String, required: true },
-    logradouro: String,
-    bairro:     String,
-    cidade:     String,
-    estado:     String,
+    nome:        { type: String, required: true },
+    cep:         { type: String, required: true },
+    logradouro:  String,
+    numero:      String,
+    complemento: String,
+    bairro:      String,
+    cidade:      String,
+    estado:      String,
   },
   { timestamps: true }
 );

@@ -14,12 +14,12 @@ const sqlite = require('./sqliteRepository');
 const mongo  = require('./mongoRepository');
 
 function getRepos(req) {
-  // aceita tanto header quanto query string
+  
   const raw = (req.headers['x-db'] || req.query.db || 'sqlite').toLowerCase();
 
   if (raw === 'both')   return [sqlite, mongo];
   if (raw === 'mongo')  return [mongo];
-  return [sqlite]; // padrão
+  return [sqlite];
 }
 
 module.exports = { getRepos };

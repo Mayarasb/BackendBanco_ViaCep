@@ -9,7 +9,7 @@ import CepResult from './src/components/CepResult';
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 // Troque pelo IP da sua máquina ao rodar no celular físico
-const API_URL = 'http://192.168.1.100:3000';
+const API_URL = 'http://192.168.1.34:3000';
 
 const DB_OPTIONS = [
   { label: 'SQLite',  value: 'sqlite', cor: '#4F7FFA' },
